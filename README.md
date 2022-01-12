@@ -1,5 +1,4 @@
 # Pong game using Duel Deep Q-learning
-- - -
 
 # Supported system
 
