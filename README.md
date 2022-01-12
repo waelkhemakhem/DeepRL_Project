@@ -37,3 +37,11 @@ This should print out the names of ROMs as it imports them. The ROMs will be cop
 You now need to execute the main python file which is ```main_dueling_ddqn.py```.
 
 The train session will start.
+
+# Contributors:
+
+This project was achieved by:
+
+## Wael Khemakhem
+## Mohamed Oussema Mhiri
+## Ahmad Frikha
