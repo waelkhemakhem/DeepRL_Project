@@ -42,8 +42,8 @@ The train session will start.
 
 This project was achieved by:
 
-Wael Khemakhem
+- Wael Khemakhem
 
-Mohamed Oussema Mhiri
+- Mohamed Oussema Mhiri
 
-Ahmad Frikha
+- Ahmad Frikha
