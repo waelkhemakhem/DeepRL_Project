@@ -1,4 +1,5 @@
 # Pong game using Duel Deep Q-learning
+<img src="https://thumbs.gfycat.com/OrdinaryCloudyAnhinga-size_restricted.gif" width="390" height="410">
 
 # Description:
 
