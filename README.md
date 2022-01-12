@@ -1,6 +1,6 @@
 # Pong game using Duel Deep Q-learning
 
-## Description:
+# Description:
 
 An Pong game developed using an OpenAI gym environment to train a Duel Deep Q learning algorithm (DDQN).
 
