@@ -23,14 +23,13 @@ Installing OpenAI gym SDK: ```pip install gym```
 
 Installing pyTorch: ```pip install torch```
 
-```test```
-
 # Importing ROMs
 
 In order to import ROMS, you need to download ```Roms.rar``` from the Atari 2600 VCS ROM Collection and extract the .rar file. Once you've done that, run:
 Make a folder named ```ROM``` inside the main project folder and extract what's in ```Roms.rar``` inside that folder.
 Then run this command
 ```python -m atari_py.import_roms <path to folder>```
+
 This should print out the names of ROMs as it imports them. The ROMs will be copied to your installation directory.
 
 # Running the train
