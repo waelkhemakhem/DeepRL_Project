@@ -49,7 +49,9 @@ if __name__ == '__main__':
              ' average score %.1f' % avg_score, 'best score %.2f' % best_score,
             'epsilon %.2f' % agent.epsilon, 'steps', n_steps)
 
-        if avg_score > best_score:
+        #if avg_score > best_score:
+        if avg_score > 15:
+
             if not load_checkpoint:
                 agent.save_models()
             best_score = avg_score
