@@ -39,11 +39,10 @@ We can modify specific aspects of the environment by using subclasses of gym.
 "gym.Wrapper" that override how the environment processes observations, rewards, and action.
 """
 class RepeatActionAndMaxFrame(gym.Wrapper):
-	"""
-	Atari 2600 games have a flickering effect, which is due to the platform’s limitation of rendering frames.
-	The solution is to take the maximum of every pixel in every two frames and use it as an observation.
-	"""
+	# Atari 2600 games have a flickering effect, which is due to the platform’s limitation of rendering frames.
+	# The solution is to take the maximum of every pixel in every two frames and use it as an observation.
     def __init__(self, env=None, repeat=2):
+
         super(RepeatActionAndMaxFrame, self).__init__(env)
         self.repeat = repeat
         self.shape = env.observation_space.low.shape
@@ -56,7 +55,8 @@ class RepeatActionAndMaxFrame(gym.Wrapper):
         for i in range(self.repeat):
             obs, reward, done, info = self.env.step(action)
             t_reward += reward
-            self.frame_buffer[i] = obs
+            idx = i % 2
+            self.frame_buffer[idx] = obs
             if done:
                 break
 

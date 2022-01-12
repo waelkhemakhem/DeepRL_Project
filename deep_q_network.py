@@ -45,7 +45,7 @@ class DuelingDeepQNetwork(nn.Module):
 
     # calculate the outputted convolutional layers dimensions
     def calculate_conv_output_dims(self, input_dims):
-        state = T.zeros(1, input_dims)
+        state = T.zeros(1, *input_dims)
         dims = self.conv1(state)
         dims = self.conv2(dims)
         dims = self.conv3(dims)
